@@ -1,0 +1,43 @@
+@import 'config';
+@import 'faq';
+
+html {
+  font-size: 12px;
+}
+
+body {
+  background: linear-gradient(180deg, $sft_violet, $sft_blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-top: 15rem;
+
+  main {
+    @media screen and (max-width: 350px) {
+      padding: 0 10px;
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 30px 0;
+    font-family: $font;
+
+    .attribution {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    .attribution a {
+      color: $sft_red;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding-top: 7rem;
+  }
+}

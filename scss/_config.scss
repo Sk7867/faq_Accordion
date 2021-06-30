@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$font: 'Kumbh Sans', sans-serif;
+$v_drk_desat_blue: hsl(238, 29%, 16%);
+$sft_red: hsl(14, 88%, 65%);
+$sft_violet: hsl(273, 75%, 66%);
+$sft_blue: hsl(240, 73%, 65%);
+$vdrk_gry_blue: hsl(237, 12%, 33%);
+$drk_gry_blue: hsl(240, 6%, 50%);
+$div: hsl(240, 5%, 91%);
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+@mixin transOpen {
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes boxHover {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
